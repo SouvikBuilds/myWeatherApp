@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 40vw;
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 40px;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.inputBox img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.inputBox input {
+    width: 30vw;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.details {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.details img:hover {
+    cursor: pointer;
+    transform: scale3d(1.2);
+}
+
+.details h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.details p {
+    color: white;
+    font-size: 24px;
+}
+
+.weatherData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 150px;
+    margin-top: 40px;
+}
+
+.data img {
+    filter: brightness(0) invert(1);
+}
+
+.data div h2 {
+    color: white;
+}
+
+.data div p {
+    color: white;
+}
+
+.windData {
+    color: white;
+}
+
+#wind {
+    color: white;
+}
+
+.fault {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .inputBox input {
+        width: 90vw;
+    }
+
+    .weatherData {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .data {
+        /* border: 1px solid #f3f3f3; */
+        padding: 50px;
+    }
+
+    .data img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .data h2,
+    p {
+        font-size: 50px;
+    }
+}

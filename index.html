@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather App- Using Pure Html,Css,js(api)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputBox">
+            <input type="text" name="" id="search-city" placeholder="Enter City Name">
+            <img src="Search Icon.png" alt="Not Found" id="searchButton">
+        </div>
+        <div class="fault">
+            <p>Invalid</p>
+        </div>
+
+        <div class="details">
+            <img src="cloud-Photoroom.png" alt="Not Found" height="200px" width="200px" id="weatherImage">
+            <div class="cityName">
+                <h2></h2>
+            </div>
+
+            <div id="temp">
+                <p></p>
+            </div>
+
+        </div>
+        <div class="weatherData">
+
+            <div class="data">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/13944/13944027.png" alt="Not Found" height="40px"
+                        width="40px">
+                    <div class="humidityData">
+                        <h2>Humidity:</h2>
+                        <p>15%</p>
+                    </div>
+                </div>
+            </div>
+            <div class="data">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/959/959711.png" alt="Not Found" height="40px"
+                        width="40px">
+                    <div class="windData">
+                        <h2>Wind:</h2>
+                        <p id="wind">15km/h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="data">
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/128/5587/5587255.png" alt="Not Found" height="40px"
+                        width="40px">
+                    <div class="uvIndexData">
+                        <h2>UV Index:</h2>
+                        <p id="uvIndex">15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
