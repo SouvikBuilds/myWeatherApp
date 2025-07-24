@@ -19,12 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
         if (response.status === 404) {
             fault.innerHTML = `<p>Error At Fetching Data</p>`
             fault.style.display = "block"
+            details.style.display = "none"
+            weatherData.style.display = "none"
             return
         }
 
         if (!response.ok) {
             fault.innerHTML = `<p>City Not Found</p>`
             fault.style.display = "block"
+            details.style.display = "none"
+            weatherData.style.display = "none"
             return
         }
         const data = await response.json()
